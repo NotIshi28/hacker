@@ -1,0 +1,132 @@
+<html><head><title>NotIshi's Secure Contact Portal</title><style>
+    body {
+        background-color: #0f0f0f;
+        color: #33ff33;
+        font-family: 'Courier New', monospace;
+        margin: 0;
+        padding: 20px;
+        line-height: 1.6;
+        cursor: none;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(26, 26, 26, 0.8);
+        border: 1px solid #33ff33;
+        box-shadow: 0 0 10px #33ff33;
+        position: relative;
+        overflow: hidden;
+    }
+    h1, h2 {
+        color: #33ff33;
+        text-align: center;
+        text-shadow: 0 0 5px #33ff33;
+    }
+    .warning {
+        color: #ff3333;
+        text-align: center;
+        font-weight: bold;
+        margin: 20px 0;
+        animation: blink 1s infinite;
+    }
+    .pgp-key {
+        background-color: #0a0a0a;
+        border: 1px solid #33ff33;
+        padding: 10px;
+        font-size: 0.8em;
+        overflow-x: auto;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        margin-bottom: 10px;
+        transition: color 0.3s ease;
+    }
+    li:hover {
+        color: #00ff00;
+    }
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.8em;
+        color: #666;
+    }
+    #cursor {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #33ff33;
+        border-radius: 50%;
+        position: fixed;
+        pointer-events: none;
+        z-index: 9999;
+    }
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    .matrix-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        z-index: -1;
+    }
+    .matrix-column {
+        position: absolute;
+        top: -100px;
+        width: 20px;
+        color: #33ff33;
+        font-size: 1.2em;
+        text-align: center;
+        animation: fall 20s infinite linear;
+    }
+    @keyframes fall {
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(100vh); }
+    }
+</style></head><body>
+    <div id="cursor"></div>
+    <div class="matrix-bg" id="matrix-bg"></div>
+    <div class="container">
+        <h1>NotIshi's Secure Contact Portal</h1>
+        
+        <div class="warning">
+            ⚠️ ATTENTION: This is a secure communication channel. Ensure you're using Tor and have verified this .onion address. ⚠️
+        </div>
+        
+        <h2>About</h2>
+        <p>This is a secure communication portal for contacting NotIshi. All messages are encrypted and this site does not log any data.</p>
+        
+        <h2>Contact Information</h2>
+        <ul>
+            <li>Secure Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="21405358404f615244425453444c40484d0f4e4f484e4f">[email&#160;protected]</a></li>
+            <li>Jabber/XMPP: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="39584b4058577953585b5b5c4b175a5855404150574a4d504d4c4d5c17564b5e">[email&#160;protected]</a></li>
+            <li>Tox ID: 3A6BEDA16F8DD1431EC20EF82E0EDC0E32B27B0890D37B92667610D4835723A94C3FDEB20413</li>
+        </ul>
+        
+        <h2>PGP Public Key</h2>
+        <pre class="pgp-key">
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+mQINBGHvYYIBEADJ3q4LywO7GbZ4Jx1OuHwfZpL...
+[REST OF THE PUBLIC KEY]
+-----END PGP PUBLIC KEY BLOCK-----
+        </pre>
+        
+        <h2>Secure Drop</h2>
+        <p>For highly sensitive information, use our Secure Drop system: http://securedrop7mlitckvxsq6s4suujucrlpvwa5zhhey3lhc422gapp2sqd.onion</p>
+        
+        <h2>Verification</h2>
+        <p>To verify my identity, I will sign all communications with the PGP key above. Always verify signatures before trusting any message purportedly from me.</p>
+        
+        <div class="footer">
+            <p>Last updated: [TIMESTAMP REDACTED]</p>
+            <p>This .onion site is hosted on a secure, airgapped server.</p>
+        </div>
+    </div>
+</body></html>
